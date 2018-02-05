@@ -1,9 +1,12 @@
 package com.codecool;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class SingleValue extends Value {
-    String param;
+
 
     public SingleValue(String param) {
-        this.param = param;
+        super(param);
     }
 }
