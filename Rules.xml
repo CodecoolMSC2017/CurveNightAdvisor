@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Rules>
+    <Rule id="money">
+        <Question>Do you want to spend more than 40000Ft tonight?</Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue value = "yes" />
+            </Selection>
+            <Selection value="false">
+                <SingleValue value="no"/>
+            </Selection>
+        </Answer>
+    </Rule>
+    ...
+    <Rule id="sex">
+        <Question>Do you want to Koit at the end of the night?</Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue value="yes"/>
+            </Selection>
+            <Selection value="false">
+                <SingleValue value="no"/>
+            </Selection>
+        </Answer>
+    </Rule>
+    ...
+    <Rule id="drink">
+        <Question>What kind of drink do you want?</Question>
+        <Answer>
+            <Selection value="true">
+                <MultipleValue value="vodka,whiskey,absynthe,tequila,metaxa,gin,rum,moonshine"/>
+            </Selection>
+            <Selection value="false">
+                <MultipleValue value="cocktail,champagne,wine,beer"/>
+            </Selection>
+        </Answer>
+    </Rule>	
+    ...
+    <Rule id="indentity">
+        <Question>Are you homosexual?</Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue value="yes"/>
+            </Selection>
+            <Selection value="false">
+                <SingleValue value="no"/>
+            </Selection>
+        </Answer>
+    </Rule>
+	
+    <Rule id="narcotics">
+        <Question>What kind of drug do you want to consume?</Question>
+        <Answer>
+            <Selection value="true">
+                <MultipleValue value="légyölő-galóca,cocaine,heroin,crocodile"/>
+            </Selection>
+            <Selection value="false">
+                <MultipleValue value="weed,spuri,gina,mushroom,herbal"/>
+            </Selection>
+        </Answer>
+    </Rule>   
+</Rules>
+
