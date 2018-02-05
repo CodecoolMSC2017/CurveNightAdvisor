@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Facts>
+    <Fact id="vegas">
+        <Description value="Caesars Palace,Las Vegas, NV"/>
+        <Evals>
+            <Eval id="money">true</Eval>
+            <Eval id="sex">true</Eval>
+            <Eval id="drink">true</Eval>
+            <Eval id="gamble">true</Eval>
+            <Eval id="narcotics">true</Eval>
+        </Evals>
+    </Fact>
+    ...
+    <Fact id="dubai">
+        <Description value="BASEDUBAI,Dubai,UAE"/>
+        <Evals>
+            <Eval id="money">true</Eval>
+            <Eval id="sex">true</Eval>
+            <Eval id="drink">false</Eval>
+            <Eval id="gamble">true</Eval>
+            <Eval id="narcotics">true</Eval>
+        </Evals>
+    </Fact>
+    ...
+    <Fact id="retur">
+        <Description value="Retur Sorozo,Tiszai PU,HUN (You can choose a 'PRETTY' lady from fonoda)"/>
+        <Evals>
+            <Eval id="money">false</Eval>
+            <Eval id="sex">true</Eval>
+            <Eval id="drink">true</Eval>
+            <Eval id="gamble">true</Eval>
+            <Eval id="narcotics">true</Eval>
+        </Evals>
+    </Fact>
+    ...
+    <Fact id="viagra">
+        <Description value="https://www.hazipatika.com/gyogyszerkereso/termek/viagra_100_mg_filmtabletta/13813"/>
+        <Evals>
+            <Eval id="money">true</Eval>
+            <Eval id="sex">false</Eval>
+            <Eval id="drink">true</Eval>
+            <Eval id="gamble">true</Eval>
+            <Eval id="narcotics">true</Eval>
+        </Evals>
+    </Fact>
+    ...
+    <Fact id="goodspirit">
+        <Description value="GoodSpirit Whisky and Cocktail Bar,Budapest,HUN"/>
+        <Evals>
+            <Eval id="money">true</Eval>
+            <Eval id="sex">true</Eval>
+            <Eval id="drink">true</Eval>
+            <Eval id="gamble">true</Eval>
+            <Eval id="narcotics">false</Eval>
+        </Evals>
+    </Fact>
+    ...
+    <Fact id="ozara">
+        <Description value="Ozora fesztival,Dadpuszta,HUN"/>
+        <Evals>
+            <Eval id="money">true</Eval>
+            <Eval id="sex">true</Eval>
+            <Eval id="drink">true</Eval>
+            <Eval id="gamble">false</Eval>
+            <Eval id="narcotics">true</Eval>
+        </Evals>
+    </Fact>
+    ...
+    <Fact id="home">
+        <Description value="https://www.pornhub.com"/>
+        <Evals>
+            <Eval id="money">false</Eval>
+            <Eval id="sex">false</Eval>
+            <Eval id="drink">false</Eval>
+            <Eval id="gamble">false</Eval>
+            <Eval id="narcotics">false</Eval>
+        </Evals>
+    </Fact>
+</Facts>

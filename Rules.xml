@@ -36,8 +36,8 @@
         </Answer>
     </Rule>	
     ...
-    <Rule id="indentity">
-        <Question>Are you homosexual?</Question>
+    <Rule id="gamble">
+        <Question>Do you want to gamble?</Question>
         <Answer>
             <Selection value="true">
                 <SingleValue value="yes"/>
