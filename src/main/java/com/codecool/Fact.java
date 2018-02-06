@@ -22,7 +22,7 @@ public class Fact {
         return evals.keySet();
     }
 
-    public boolean getValieById(String input) {
+    public boolean getValueById(String input) {
         return evals.get(input);
     }
 
