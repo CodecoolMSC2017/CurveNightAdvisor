@@ -19,7 +19,8 @@ public class Question {
     Answer getAnswer(){
         return answer;
     }
-    boolean getEvaluatedAnswer(){
-        return true;
+    boolean getEvaluatedAnswer(String input){
+        return answer.evaluateAnswerByInput(input);
     }
+
 }
