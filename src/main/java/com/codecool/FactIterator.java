@@ -18,5 +18,8 @@ public class FactIterator implements Iterator {
         idx++;
         return keys[idx--];
     }
+    public void remove(){
+        
+    }
 
 }
