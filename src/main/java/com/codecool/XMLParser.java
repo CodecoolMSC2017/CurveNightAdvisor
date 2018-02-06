@@ -13,7 +13,7 @@ public abstract class XMLParser {
 
     public void loadXmlDocument(String xmlpath) throws FileNotFoundException{
         try {
-            File fXmlFile = new File("Facts.xml");
+            File fXmlFile = new File(xmlpath);
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             this.doc = dBuilder.parse(fXmlFile);

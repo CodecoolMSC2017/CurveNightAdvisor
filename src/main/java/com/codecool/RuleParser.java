@@ -18,8 +18,12 @@ public class RuleParser extends XMLParser{
 
     public RuleRepository getRepository() {
         RuleRepository ruleRepository = new RuleRepository();
-        try{
+        try {
             loadXmlDocument("Rules.xml");
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
             NodeList nlist = doc.getElementsByTagName("Rule");
             for(int i = 0; i < nlist.getLength(); i++){
                 Node node = nlist.item(i);
@@ -54,10 +58,7 @@ public class RuleParser extends XMLParser{
                     ruleRepository.addQuestion(question);
                     }
                 }
-            }
-            catch(Exception e){
-                e.printStackTrace();
-            }
+
             return ruleRepository;
         }
 

@@ -1,4 +1,4 @@
-package com.codecool;
+/*package com.codecool;
 
 import java.util.Map;
 import java.util.Scanner;
@@ -30,4 +30,4 @@ public class ESProvider {
 
     }
 
-}
+}*/
