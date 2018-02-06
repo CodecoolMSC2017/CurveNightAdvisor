@@ -7,26 +7,21 @@ public abstract class Value {
     List<String> param;
     boolean bool;
 
-    public Value(List<String> list) {
+    public Value(List<String> list, boolean bool) {
         param = list;
+        this.bool = bool;
+
     }
 
-    public Value(String param) {
+    public Value(String param, boolean bool) {
         List<String> list = new ArrayList<String>();
         list.add(param);
         this.param = list;
+        this.bool = bool;
     }
 
     public List<String> getInputPattern() {
         return param;
-    }
-
-    public void setBool(boolean parserInput) {
-        if (parserInput) {
-            this.bool = true;
-        } else {
-            this.bool = false;
-        }
     }
 
     public boolean getBool() {

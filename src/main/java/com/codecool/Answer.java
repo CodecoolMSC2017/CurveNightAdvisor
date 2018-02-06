@@ -1,8 +1,8 @@
 package com.codecool;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.NoSuchElementException;
 
 public class Answer {
     Map<Boolean, Value> values;
@@ -13,19 +13,18 @@ public class Answer {
 
     public boolean evaluateAnswerByInput(String input) {
         for(Map.Entry<Boolean, Value> entry : values.entrySet()) {
-            if (Arrays.asList(entry.getValue().getInputPattern()).contains(input)) {
-                return true;
+            for(int i = 0;i < entry.getValue().getInputPattern().size();i++){
+                if(entry.getValue().getInputPattern().get(i).equals(input)){
+                    return entry.getKey();
+                }
             }
         }
-        return false;
+                throw new NoSuchElementException();
+
     }
 
 
-        public void addValue(Value value) {
-            if(value.getBool()){
-                values.put(true, value);
-            }else {
-                values.put(false, value);
-            }
+    public void addValue(Value value) {
+        values.put(value.getBool(),value);
     }
 }
