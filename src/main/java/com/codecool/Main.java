@@ -15,6 +15,7 @@ public class Main {
 
         RuleParser r = new RuleParser();
         System.out.println(r.repository.questionMap.get("narcotics").getEvaluatedAnswer("weed"));
-
+        FactParser f = new FactParser();
+        System.out.println(f.factRepository.factMap.get("vegas").getDescription());
     }
 }
