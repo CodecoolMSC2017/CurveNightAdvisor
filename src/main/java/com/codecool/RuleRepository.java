@@ -1,16 +1,13 @@
 package com.codecool;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class RuleRepository {
     Map<String, Question> questionMap;
     Iterator<Question> questionIterator;
 
-    public RuleRepository(Map<String, Question> map) {
-        this.questionMap = map;
+    public RuleRepository() {
+        questionMap = new HashMap<String, Question>();
         questionIterator = getIterator();
     }
 
