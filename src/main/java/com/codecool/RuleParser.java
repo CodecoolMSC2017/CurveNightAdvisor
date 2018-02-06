@@ -1,13 +1,20 @@
 package com.codecool;
 
+import java.util.Map;
+
 public class RuleParser {
     RuleRepository repository;
 
-    // public RuleParser(){
-    //     repository = getRuleRepository();
-    //}
-    //public RuleRepository getRuleRepository(){
-    //     return new RuleRepository(XMLParser.getRules());
-    // }
+    public RuleParser(){
+        repository = new RuleRepository();
+    }
+
+
+    public RuleRepository getRuleRepository(){
+         return repository;
+    }
+
+
+
 }
 
