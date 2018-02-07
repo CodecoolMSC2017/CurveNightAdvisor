@@ -5,26 +5,26 @@ import java.util.List;
 
 public abstract class Value {
     List<String> param;
-    boolean bool;
+    boolean selectionType;
 
-    public Value(List<String> list, boolean bool) {
+    public Value(List<String> list, boolean selectionType){
         param = list;
-        this.bool = bool;
+        this.selectionType = selectionType;
 
     }
 
-    public Value(String param, boolean bool) {
+    public Value(String param, boolean selectionType){
         List<String> list = new ArrayList<String>();
         list.add(param);
         this.param = list;
-        this.bool = bool;
+        this.selectionType= selectionType;
     }
 
     public List<String> getInputPattern() {
         return param;
     }
 
-    public boolean getBool() {
-        return bool;
+    public boolean getSelectionType() {
+        return selectionType;
     }
 }

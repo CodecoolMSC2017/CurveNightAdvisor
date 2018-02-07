@@ -25,6 +25,6 @@ public class Answer {
 
 
     public void addValue(Value value) {
-        values.put(value.getBool(),value);
+        values.put(value.getSelectionType(),value);
     }
 }
