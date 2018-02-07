@@ -27,8 +27,5 @@ public class Question {
     boolean getEvaluatedAnswer(String input){
         return answer.evaluateAnswerByInput(input);
     }
-    public void addToAnswerMap(String input) {
-        answers.put(getId(),getEvaluatedAnswer(input));
-    }
 
 }
