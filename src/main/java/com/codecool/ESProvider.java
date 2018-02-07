@@ -1,8 +1,6 @@
 package com.codecool;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class ESProvider {
     FactParser factParser;
@@ -43,6 +41,23 @@ public class ESProvider {
 
     }
     String evaluate(){
+        collectAnswers();
+        FactIterator f = factParser.factRepository.getIterator();
+        while(f.hasNext()) {
+            int counter = 0;
+            Fact fact = f.next();
+            List<String> keys = new ArrayList<String>(fact.getIdSet()) ;
+            for(String str:keys){
+                Boolean bool = fact.getValueById(str);
+                if(inputMap.get(str) == bool) {
+                    counter ++;
+                }
+            }
+            if(counter == keys.size()) {
+                return fact.getDescription();
+            }
+
+        }
         return null;
     }
 

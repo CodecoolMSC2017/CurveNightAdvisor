@@ -15,20 +15,8 @@ public class Main {
         FactParser f = new FactParser();
         RuleParser r = new RuleParser();
         ESProvider esp = new ESProvider(f,r);
-        /*System.out.println(r.RuleRepository.questionMap.get("narcotics").getEvaluatedAnswer("weed"));
-        System.out.println(f.factRepository.factMap.get("vegas").getDescription());
-        System.out.println(f.factRepository.factIterator);
-        System.out.println(r.RuleRepository.questionIterator);
-        for (int i = 0;i<r.values.size();i++){
-            for (String str : r.values.get(i)){
-                System.out.println(str);
-            }
-        }*/
-        esp.collectAnswers();
-        System.out.println(esp.inputMap.get("narcotics"));
-        System.out.println(esp.inputMap.get("money"));
-        System.out.println(esp.inputMap.get("gamble"));
-        System.out.println(esp.inputMap.get("sex"));
+
+        System.out.println(esp.evaluate());
 
     }
 }
