@@ -25,18 +25,15 @@ public class ESProvider {
         getAvaiableValues();
        while(a.hasNext()){
             Question q = a.next();
+            System.out.println(q.getQuestion());
             if(q.getId().equals("narcotics")) {
-                System.out.println(q.getQuestion());
+                System.out.println("OPTIONS: ");
                 printAvaiable(availableNarcotics);
             }
             else if (q.getId().equals("drink")){
-               System.out.println(q.getQuestion());
-               printAvaiable(availableAlcohols);
+                System.out.println("OPTIONS: ");
+                printAvaiable(availableAlcohols);
                 }
-
-            else{
-                System.out.println(q.getQuestion());
-            }
             input = scan.nextLine();
             Boolean bool = getAnswerByQuestion(q.getId());
             inputMap.put(q.getId(),bool);
@@ -77,7 +74,7 @@ public class ESProvider {
             }
 
         }
-        return d;
+        return "The perfect option for you tonight: "+d;
     }
     void getAvaiableValues(){
         int counter = 0;
