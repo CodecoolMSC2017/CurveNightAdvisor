@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Rules>
     <Rule id="money">
-        <Question>Do you want to spend more than 40000Ft tonight?</Question>
+        <Question>Do you want to spend a shit load of money tonight?</Question>
         <Answer>
             <Selection value="true">
                 <SingleValue value = "yes" />
