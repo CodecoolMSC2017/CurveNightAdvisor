@@ -57,6 +57,10 @@ public class RuleParser extends XMLParser{
                     }
                     else{
                         value = e.getElementsByTagName("SingleValue").item(0).getAttributes().getNamedItem("value").getNodeValue();
+                        if(k == 0) {
+                            bool = true;
+
+                        }
                         answer.addValue(new SingleValue(value,bool));
                     }
 

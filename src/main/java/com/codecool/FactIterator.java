@@ -6,20 +6,23 @@ import java.util.Map;
 
 public class FactIterator implements Iterator {
     Map<String,Fact> facts ;
-    int idx = 0;
+    int idx;
     int size;
     public FactIterator(Map<String,Fact> facts){
         this.facts = facts;
         size  = facts.size();
+        idx = 0;
     }
     public boolean hasNext() {
-        return idx + 1 < size;
+        return idx < size;
     }
 
-    public String next() {
-        String[] keys = (String[]) facts.keySet().toArray();
+    public Fact next() {
+        Fact[] value =  facts.values().toArray(new Fact[size]);
+
+        Fact temp =value[idx];
         idx++;
-        return keys[idx--];
+        return temp;
     }
     public void remove(){
         

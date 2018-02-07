@@ -19,7 +19,7 @@ public class Answer {
                 }
             }
         }
-                throw new NoSuchElementException();
+        throw new NoSuchElementException();
 
     }
 

@@ -4,11 +4,9 @@ import java.util.*;
 
 public class RuleRepository {
     Map<String, Question> questionMap;
-    Iterator<Question> questionIterator;
 
     public RuleRepository() {
         questionMap = new HashMap<String, Question>();
-        questionIterator = getIterator();
     }
 
 
@@ -16,7 +14,7 @@ public class RuleRepository {
         questionMap.put(question.getId(),question);
     }
 
-    public Iterator<Question> getIterator() {
+    public QuestionIterator getIterator() {
         return new QuestionIterator(questionMap);
     }
 
