@@ -41,6 +41,8 @@ public class ESProvider {
 
     }
     String evaluate(){
+        int max = 0;
+        String d = "";
         collectAnswers();
         FactIterator f = factParser.factRepository.getIterator();
         while(f.hasNext()) {
@@ -53,12 +55,14 @@ public class ESProvider {
                     counter ++;
                 }
             }
-            if(counter == keys.size()) {
-                return fact.getDescription();
+            if(counter > max) {
+                counter = max;
+                d = fact.getDescription();
+
             }
 
         }
-        return null;
+        return d;
     }
 
 }
