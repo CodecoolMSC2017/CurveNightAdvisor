@@ -18,7 +18,7 @@ public class ESProvider {
         while()
     }
     boolean getAnswerByQuestion(String questionId){
-        Map<String,Question> temp= ruleParser.repository.questionMap;
+        Map<String,Question> temp= ruleParser.questionRepository.questionMap;
         for(Map.Entry<String,Question> entry : temp.entrySet()){
             if (entry.getKey().equals(questionId)){
                 return entry.getValue().getEvaluatedAnswer(answer);

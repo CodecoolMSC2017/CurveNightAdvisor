@@ -5,16 +5,19 @@ import java.util.Iterator;
 import java.util.Map;
 
 public class FactIterator implements Iterator {
-
-    static Map<String,Boolean> facts = new HashMap<String, Boolean>();
-    String[] keys = (String[]) facts.keySet().toArray();
+    Map<String,Fact> facts ;
     int idx = 0;
-    int size = facts.size();
+    int size;
+    public FactIterator(Map<String,Fact> facts){
+        this.facts = facts;
+        size  = facts.size();
+    }
     public boolean hasNext() {
         return idx + 1 < size;
     }
 
     public String next() {
+        String[] keys = (String[]) facts.keySet().toArray();
         idx++;
         return keys[idx--];
     }

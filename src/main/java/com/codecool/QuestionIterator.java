@@ -1,29 +1,28 @@
 package com.codecool;
 
+import java.util.HashMap;
 import java.util.Iterator;
-import java.util.List;
+import java.util.Map;
 
 public class QuestionIterator implements Iterator {
-
-    private int i;
-    private List<Question> list;
-
-    public QuestionIterator(List<Question> list) {
-        this.list = list;
+    Map<String,Question> questions ;
+    int idx = 0;
+    int size;
+    public QuestionIterator(Map<String,Question> questions){
+        this.questions = questions;
+        size  = questions.size();
     }
-
     public boolean hasNext() {
-        if (i + 1 < list.size()) {
-            return true;
-        }
-        return false;
+        return idx + 1 < size;
     }
 
-    public Question next() {
-        return list.get(i++);
+    public String next() {
+        String[] keys = (String[]) questions.keySet().toArray();
+        idx++;
+        return keys[idx--];
+    }
+    public void remove(){
+
     }
 
-    public void remove() {
-
-    }
 }

@@ -17,8 +17,7 @@ public class RuleRepository {
     }
 
     public Iterator<Question> getIterator() {
-        List<Question> questionList = new ArrayList<Question>();
-        return new QuestionIterator(questionList);
+        return new QuestionIterator(questionMap);
     }
 
 }
