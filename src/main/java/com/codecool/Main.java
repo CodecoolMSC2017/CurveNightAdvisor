@@ -19,5 +19,11 @@ public class Main {
         System.out.println(f.factRepository.factMap.get("vegas").getDescription());
         System.out.println(f.factRepository.factIterator);
         System.out.println(r.RuleRepository.questionIterator);
+        for (int i = 0;i<r.values.size();i++){
+            for (String str : r.values.get(i)){
+                System.out.println(str);
+            }
+        }
+
     }
 }

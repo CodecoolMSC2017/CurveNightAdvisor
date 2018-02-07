@@ -5,13 +5,18 @@ package com.codecool;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class RuleParser extends XMLParser{
-    RuleRepository repository;
+    RuleRepository RuleRepository;
+    List<String[]> values = new ArrayList<String[]>();
+
 
     public RuleParser(){
-        repository = getRepository();
+        RuleRepository = getRepository();
     }
 
 
@@ -46,6 +51,8 @@ public class RuleParser extends XMLParser{
                             bool = true;
 
                         }
+                        String[] temp = value.split(",");
+                        values.add(temp);
                         answer.addValue(new MultipleValue(Arrays.asList(value.split(",")),bool));
                     }
                     else{
