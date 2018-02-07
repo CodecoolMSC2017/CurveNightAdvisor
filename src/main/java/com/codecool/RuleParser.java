@@ -11,15 +11,13 @@ import java.util.Arrays;
 import java.util.List;
 
 public class RuleParser extends XMLParser{
+
     RuleRepository RuleRepository;
     List<String[]> values = new ArrayList<String[]>();
-
 
     public RuleParser(){
         RuleRepository = getRepository();
     }
-
-
 
     public RuleRepository getRepository() {
         RuleRepository ruleRepository = new RuleRepository();
