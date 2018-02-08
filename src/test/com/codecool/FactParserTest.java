@@ -1,5 +1,6 @@
 package com.codecool;
 
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -16,11 +17,11 @@ class FactParserTest {
     @Test
     void getFactRepository() {
         FactRepository test = factParserTest.getFactRepository();
-        Fact ozora = test.getIterator().next();
-        assertEquals(true, ozora.getValueById("money"));
-        assertEquals(false, ozora.getValueById("gamble"));
+        Fact green = test.getIterator().next();
+        assertEquals(false, green.getValueById("money"));
+        assertEquals(false, green.getValueById("gamble"));
         assertThrows(NullPointerException.class, ()-> {
-            ozora.getValueById("baromság");
+            green.getValueById("baromság");
         });
     }
 }

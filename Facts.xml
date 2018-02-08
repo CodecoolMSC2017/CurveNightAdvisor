@@ -44,6 +44,17 @@
         </Evals>
     </Fact>
     ...
+    <Fact id="casino">
+        <Description value="Las Vegas Bánréve, Bánréve, HUN"/>
+        <Evals>
+            <Eval id="money">true</Eval>
+            <Eval id="sex">true</Eval>
+            <Eval id="drink">false</Eval>
+            <Eval id="gamble">true</Eval>
+            <Eval id="narcotics">false</Eval>
+        </Evals>
+    </Fact>
+    ...
     <Fact id="goodspirit">
         <Description value="GoodSpirit Whisky and Cocktail Bar,Budapest,HUN"/>
         <Evals>
@@ -52,6 +63,83 @@
             <Eval id="drink">true</Eval>
             <Eval id="gamble">true</Eval>
             <Eval id="narcotics">false</Eval>
+        </Evals>
+    </Fact>
+    ...
+    <Fact id="dock">
+        <Description value="Dokk Bisztró, Budapest, HUN"/>
+        <Evals>
+            <Eval id="money">true</Eval>
+            <Eval id="sex">false</Eval>
+            <Eval id="drink">true</Eval>
+            <Eval id="gamble">false</Eval>
+            <Eval id="narcotics">true</Eval>
+        </Evals>
+    </Fact>
+    ...
+    <Fact id="green">
+        <Description value="https://www.greenleafhungary.com/products"/>
+        <Evals>
+            <Eval id="money">false</Eval>
+            <Eval id="sex">false</Eval>
+            <Eval id="drink">false</Eval>
+            <Eval id="gamble">false</Eval>
+            <Eval id="narcotics">true</Eval>
+        </Evals>
+    </Fact>
+    ...
+    <Fact id="monopoly">
+        <Description value="http://www.megajatek.hu/jatek/monopoly.html"/>
+        <Evals>
+            <Eval id="money">false</Eval>
+            <Eval id="sex">false</Eval>
+            <Eval id="drink">false</Eval>
+            <Eval id="gamble">true</Eval>
+            <Eval id="narcotics">false</Eval>
+        </Evals>
+    </Fact>
+    ...
+    <Fact id="hazai">
+        <Description value="Hazai Borozó, Miskolc, 3534, HUN"/>
+        <Evals>
+            <Eval id="money">false</Eval>
+            <Eval id="sex">false</Eval>
+            <Eval id="drink">true</Eval>
+            <Eval id="gamble">false</Eval>
+            <Eval id="narcotics">false</Eval>
+        </Evals>
+    </Fact>
+    ...
+    <Fact id="horny">
+        <Description value="https://rosszlanyok.hu/rosszlanyok.php"/>
+        <Evals>
+            <Eval id="money">false</Eval>
+            <Eval id="sex">true</Eval>
+            <Eval id="drink">false</Eval>
+            <Eval id="gamble">false</Eval>
+            <Eval id="narcotics">false</Eval>
+        </Evals>
+    </Fact>
+    ...
+    <Fact id="cool">
+        <Description value="Club Cool, Budapest, Nyugati pályaudvar, HUN"/>
+        <Evals>
+            <Eval id="money">true</Eval>
+            <Eval id="sex">false</Eval>
+            <Eval id="drink">true</Eval>
+            <Eval id="gamble">false</Eval>
+            <Eval id="narcotics">true</Eval>
+        </Evals>
+    </Fact>
+    ...
+    <Fact id="A38">
+        <Description value="A38 Budapest, XI., HUN"/>
+        <Evals>
+            <Eval id="money">false</Eval>
+            <Eval id="sex">true</Eval>
+            <Eval id="drink">true</Eval>
+            <Eval id="gamble">false</Eval>
+            <Eval id="narcotics">true</Eval>
         </Evals>
     </Fact>
     ...
@@ -76,4 +164,5 @@
             <Eval id="narcotics">false</Eval>
         </Evals>
     </Fact>
+
 </Facts>
