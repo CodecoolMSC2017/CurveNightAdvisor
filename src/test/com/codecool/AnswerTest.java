@@ -27,7 +27,7 @@ class AnswerTest {
         assertEquals(false, testAnswer.evaluateAnswerByInput("strawberry"));
         assertEquals(false, testAnswer.evaluateAnswerByInput("maple syrup"));
         assertThrows(NoSuchElementException.class, () -> {
-            testAnswer.evaluateAnswerByInput("hülyeség");
+            testAnswer.evaluateAnswerByInput("error raising");
         });
     }
 
